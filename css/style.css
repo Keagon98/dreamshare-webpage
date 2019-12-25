@@ -1,0 +1,595 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800|Roboto:400,700&display=swap');
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+/********************
+Default
+********************/
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  max-width: 100%;
+}
+
+h2,h3 {
+  color: #444444;
+  font-weight: 600;
+  text-align: center;
+  margin: 0;
+  margin-top: 2em;
+}
+
+p {
+  color: #666666;
+}
+
+
+/********************
+Landing Section
+********************/
+
+.landing {
+  background-image: url("assets/header_background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+  margin: 0 12rem;
+}
+
+.site-logo {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0;
+  margin: -1rem;
+}
+
+.site-logo img {
+  padding: 0;
+  margin: 0;
+}
+
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+nav li {
+  font-size: .9rem;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  text-align: center;
+  padding: .9em .9em;
+}
+
+nav a:hover,
+nav a:focus {
+  border: .1rem #fff solid;
+  padding: .4em .8em;
+  margin: 0;
+  border-radius: 3rem;
+}
+
+.burger-menu {
+  display: none;
+}
+
+
+.middle-text {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.middle-text h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  color: #fff;
+  font-size: 3rem;
+  padding-top: 5rem;
+  margin: 0;
+}
+
+.middle-text span {
+  display: block;
+}
+
+.middle-text p {
+  font-size: 1.2rem;
+  margin: .6rem 0;
+  color: #ffffffb1;
+  padding: 0;
+}
+
+.middle-text button {
+  font-size: .8rem;
+  border: none;
+  background-color: #ff4e50;
+  border-radius: 3rem;
+  padding: .5rem 1.3rem;
+  margin-top: 1em;
+}
+
+.middle-text button:hover {
+  cursor: pointer;
+  background: #4e57ff;
+}
+
+.middle-text a {
+   color: #fff;
+  text-decoration: none;
+}
+
+/******************
+Landing Responsive
+******************/
+@media screen and (max-width: 800px) {
+  .middle-text {
+    margin-top: 20%;
+  }
+
+}
+
+/******************
+Navbar Responsive
+******************/
+@media screen and (max-width: 900px) {
+  .container-nav {
+    display: block;
+    align-self: flex-start;
+    margin: 0;
+    padding: 1rem;
+  }
+  
+  .site-logo {
+    padding: 2rem;
+    display: block;
+    text-align: center;
+  }
+
+  .navbar li{
+    display:block;
+    text-align: center;
+    font-size: .7rem;
+    margin: 0;
+    padding: .4rem;
+  }
+  
+  .navbar li :hover {
+    font-weight: 700;
+    color: #444040;
+    border: none;
+  }
+  
+  }
+  
+
+/********************
+Partner Section
+********************/
+
+.partner {
+  height: 90vh;
+}
+
+.container-partner {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 3rem 10rem;
+}
+
+.profile-img {
+  border-radius: 50%;
+}
+
+.partner-img {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.partner-logo {
+  border: 3px solid #ffff;
+  height: 32px;
+  width: 32px;
+  border-radius: 50%;
+  box-sizing: content-box;
+  position: absolute;
+  bottom: -1px;
+  right: -1px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.partner-info h3 {
+  display: flex;
+  justify-content: center;
+  font-size: 1em;
+}
+
+.partner-info p {
+  display: flex;
+  justify-content: center;
+  font-size: .8rem;
+}
+
+.bg-pink {
+  background-color: #ff4e50;
+}
+
+.bg-aqua {
+  background-color: #18D4CA;
+}
+
+.bg-orange {
+  background-color: #FFA710;
+}
+
+.bg-blue {
+  background-color: #667DF3;
+}
+
+.icon-2 {
+  padding: .8em;
+  border-radius: 45%;
+  background-color: #18D4CA;
+}
+
+.icon-3 {
+  padding: .8em;
+  border-radius: 45%;
+  background-color: #FFA710;
+}
+
+.icon-4 {
+  padding: .8em;
+  border-radius: 45%;
+  background-color:  #667DF3;
+}
+
+.partner-1, .partner-2, .partner-3, .partner-4 {
+  text-align: center;
+  flex: 0 0 25%;
+  max-width: 20%;
+}
+
+.partners-button {
+  margin-top: 4.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.p-button  {
+  text-align: center;
+  padding: .5rem 1rem;
+  border: 2px solid #ff4e50;
+  border-radius: 25px;
+  color: #ff4e50;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.p-button:hover {
+  color: #fff;
+  background-color: #ff4e50;
+}
+
+/*********************
+Partner Responsive
+*********************/
+
+@media screen and (max-width: 800px) {
+
+  .partner {
+    height: 100%;
+  }
+
+  .partner-head {
+    font-size: 1.2rem;
+  }
+
+  .partner-info p, h3 {
+    font-size: 1rem;
+  }
+
+  .container-partner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .partner-1, .partner-2, .partner-3, .partner-4 {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+}
+
+
+
+/*********************
+Holiday Idea Section
+*********************/
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5rem 10rem;
+}
+
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 100%;
+}
+
+.sports {
+  position: relative;
+  text-align: center;
+  color: #444444;
+  padding: .8rem;
+  flex: 1;
+}
+
+.well-health {
+  flex: 1;
+}
+
+.expeditions {
+  flex: 1;
+}
+
+.container-2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 100%;
+}
+
+.games {
+  flex: 1;
+}
+
+.cul-edu {
+  flex: 2.1;
+}
+
+.container-3 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 100%;
+  height: 100%;
+}
+
+.travel {
+  flex: 1;
+}
+
+.beau-relax {
+  flex: 2.1;
+}
+
+.well-health, .expeditions, 
+.games, .cul-edu, 
+.beau-relax, .travel {
+  position: relative;
+  text-align: center;
+  color: #fff;
+  padding: .8rem;
+}
+
+
+.center {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: .5rem;
+}
+
+
+.image {
+  width: 100%;
+  height: 20rem;
+ border-radius: 2%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("/assets/block1Sports.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.image-2 {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2%;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/block2Wellness.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .image-3 {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2%;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/block3Expeditions.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .image-4 {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2%;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/block4Games.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .image-5 {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2%;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/block5Culture.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .image-6 {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2%;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/block6Beauty.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+ .image-7 {
+  width: 100%;
+  height: 20rem;
+  border-radius: 2%;
+   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/assets/block7Travelling.jpg");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  #resp-img {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  #resp-img {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+
+/*********************
+footer Section
+*********************/
+
+footer {
+  padding: 0;
+  margin: 4rem 0;
+  border-top: 2px #ff4e50 solid;
+}
+
+footer h2,h3 {
+  font-size: 1rem;
+  display: inline;
+}
+
+.foot-container {
+  margin: 3rem 10rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.foot-logo h2{
+  color: #ff4e50;
+  text-transform: uppercase;
+  font-weight: normal;
+  margin: 0 1rem;
+}
+
+ul {
+  display: inline;
+  font-size: .7rem;
+  color: #666666;
+  line-height: 1.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.colour-link {
+  color: #ff4e50;
+}
+
+.colour-link:hover {
+  cursor: pointer;
+  color: #ff4e50;
+  text-decoration: underline;
+}
+
+/*********************
+footer Responsive
+*********************/
+
+@media screen and (max-width: 800px) {
+  .foot-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+  }
+
+  .foot-container h3 {
+    margin-left: 2.5rem;
+  }
+
+  .link-1, .link-2, .link-3 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  .foot-logo {
+    font-size: 3rem;
+    max-width: 100%;
+    padding: 0;
+    margin-left: 2rem;
+  }
+}
+
+
+
+
